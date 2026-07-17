@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
@@ -56,6 +57,9 @@ public class MainScreenFrame extends JFrame {
 		setSize(880, 660);
 		setLocationRelativeTo(null);
 		setTitle("LocNF");
+		
+		ImageIcon icone = new ImageIcon(getClass().getResource("/br/com/locnf/infra/ui/assets/locnf_icon.png"));
+		setIconImage(icone.getImage());
 		
 		contentPane = new JPanel(new BorderLayout());
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
